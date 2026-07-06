@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1A1410">
+<title>Boissons &mdash; Le Tassi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li class="nav-dd">
+      <a href="#">Menu <span class="caret">&#9662;</span></a>
+      <ul class="dd-menu">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="poissons.html">Poissons</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <div class="mob-sec-label">&mdash; Menu &mdash;</div>
+  <a href="entrees.html">Entr&eacute;es</a><a href="pasta.html">Pasta &amp; Risotto</a>
+  <a href="viandes.html">Viandes</a><a href="poissons.html">Poissons</a>
+  <a href="pizza.html">Pizza &amp; Calzone</a><a href="desserts.html">Desserts</a>
+  <a href="boissons.html">Boissons</a>
+  <a href="contact.html">Contact</a>
+</div>
+<section class="dishes-wrap">
+  <div class="sec-header">
+    <p class="sec-eyebrow">Notre Carte</p>
+    <h2 class="sec-title"><i class="fas fa-mug-hot" style="margin-right:10px;color:var(--brown2)"></i>Boissons</h2>
+    <div class="sec-line"></div>
+  </div>
+  <a href="index.html" class="back-link" style="display:block;max-width:1100px;margin:0 auto 16px"><i class="fas fa-arrow-left"></i> Retour</a>
+  <div class="simple-grid">
+  <div class="section-divider" style="grid-column:1/-1">Caf&eacute;s</div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Espresso</div></div>
+    <div class="simple-price">250 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Capsule</div></div>
+    <div class="simple-price">300 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Machiatto</div></div>
+    <div class="simple-price">300 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">350 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; aux Trois Saveurs</div><div class="simple-sub">Vanille, Chocolat, Caramel</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Affogato</div><div class="simple-sub">Caf&eacute; Espresso, Glace Vanille</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Latte</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cappuccino Classique</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cappuccino Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">450 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Latte Machiatto Classique</div></div>
+    <div class="simple-price">450 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Latte Machiatto Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Chocolat au Lait</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Mochaccino</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Th&eacute; Infusion</div></div>
+    <div class="simple-price">250 DA</div>
+  </div><div class="section-divider" style="grid-column:1/-1">Milkshakes &amp; Frappuccinos</div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Chocolat</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Banane</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Noisette</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Caramel</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Vanille</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Fraise</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Frappuccino Classique</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Frappuccino Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">550 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Ice Mocca</div></div>
+    <div class="simple-price">600 DA</div>
+  </div>
+  </div>
+</section>
+<footer id="contact">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></div>
+      <div class="ft-tagline">Restaurant &amp; Coffee</div>
+      <p class="ft-sub">Bab Ezzouar, Alger</p>
+      <div class="ft-soc">
+        <a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="tel:0699012400"><i class="fas fa-phone"></i></a>
+        <a href="mailto:"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-hd">Menu</div>
+      <ul class="ft-links">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="poissons.html">Poissons</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-hd">Contact</div>
+      <ul class="ft-links">
+        <li><i class="fas fa-phone" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="tel:0699012400">06 99 01 24 00</a></li>
+        <li><i class="fas fa-location-dot" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i>Bab Ezzouar 16042</li>
+        <li><i class="fab fa-instagram" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank">@letassi</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">&copy; 2025 <span>Le Tassi</span> &mdash; Restaurant &amp; Coffee</p>
+    <p class="ft-copy">R&eacute;alis&eacute; avec <span>&hearts;</span></p>
+  </div>
+</footer>
+<script src="script.js"></script></body></html>

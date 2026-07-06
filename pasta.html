@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1A1410">
+<title>Pasta &amp; Risotto &mdash; Le Tassi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li class="nav-dd">
+      <a href="#">Menu <span class="caret">&#9662;</span></a>
+      <ul class="dd-menu">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="poissons.html">Poissons</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <div class="mob-sec-label">&mdash; Menu &mdash;</div>
+  <a href="entrees.html">Entr&eacute;es</a><a href="pasta.html">Pasta &amp; Risotto</a>
+  <a href="viandes.html">Viandes</a><a href="poissons.html">Poissons</a>
+  <a href="pizza.html">Pizza &amp; Calzone</a><a href="desserts.html">Desserts</a>
+  <a href="boissons.html">Boissons</a>
+  <a href="contact.html">Contact</a>
+</div>
+<section class="dishes-wrap">
+  <div class="sec-header">
+    <p class="sec-eyebrow">Notre Carte</p>
+    <h2 class="sec-title"><i class="fas fa-bowl-food" style="margin-right:10px;color:var(--brown2)"></i>Pasta &amp; Risotto</h2>
+    <div class="sec-line"></div>
+  </div>
+  <a href="index.html" class="back-link" style="display:block;max-width:1200px;margin:0 auto 16px"><i class="fas fa-arrow-left"></i> Retour</a>
+  <div class="dishes-grid">
+  <div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/carbonara.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Carbonara d'Agnello"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Carbonara d'Agnello</div>
+      <div class="dish-desc">Bavette d'agneau, jaune d'&oelig;uf et parmesan</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Moules Broccolis</div>
+      <div class="dish-desc">Moules et cr&egrave;me de broccolis</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/lasagne.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Lasagna Bolognese"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Lasagna Bolognese</div>
+      <div class="dish-desc">Lasagnes &agrave; la bolognaise traditionnelle</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/ragout%20de%20boeuf.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Ragout de B&oelig;uf"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Ragout de B&oelig;uf</div>
+      <div class="dish-desc">B&oelig;uf effiloch&eacute; et l&eacute;gumes mijot&eacute;s</div>
+      <div class="dish-price">1600 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Ravioli d'Agnello e Feta</div>
+      <div class="dish-desc">Farce d'agneau et de feta</div>
+      <div class="dish-price" style="color:var(--gray);font-size:.85rem;font-style:italic">Prix &agrave; renseigner</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Pesto E Burrata</div>
+      <div class="dish-desc">Sauce pesto, burrata</div>
+      <div class="dish-price">1800 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pasta%20fruits%20de%20mer.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Frutti di Mare"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Frutti di Mare</div>
+      <div class="dish-desc">Sauce puttanesca et m&eacute;lange de fruits de mer</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/risotto%20poulet.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Risotto Pollo e Funghi"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Risotto Pollo e Funghi</div>
+      <div class="dish-desc">Risotto de poulet aux champignons</div>
+      <div class="dish-price">1700 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/risotto%20crevettes.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Risotto Gamberi e Zucchine"></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Risotto Gamberi e Zucchine</div>
+      <div class="dish-desc">Risotto de crevettes &agrave; la cr&egrave;me de courgettes</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div>
+  </div>
+</section>
+<footer id="contact">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></div>
+      <div class="ft-tagline">Restaurant &amp; Coffee</div>
+      <p class="ft-sub">Bab Ezzouar, Alger</p>
+      <div class="ft-soc">
+        <a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="tel:0699012400"><i class="fas fa-phone"></i></a>
+        <a href="mailto:"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-hd">Menu</div>
+      <ul class="ft-links">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="poissons.html">Poissons</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-hd">Contact</div>
+      <ul class="ft-links">
+        <li><i class="fas fa-phone" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="tel:0699012400">06 99 01 24 00</a></li>
+        <li><i class="fas fa-location-dot" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i>Bab Ezzouar 16042</li>
+        <li><i class="fab fa-instagram" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank">@letassi</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">&copy; 2025 <span>Le Tassi</span> &mdash; Restaurant &amp; Coffee</p>
+    <p class="ft-copy">R&eacute;alis&eacute; avec <span>&hearts;</span></p>
+  </div>
+</footer>
+<script src="script.js"></script></body></html>
