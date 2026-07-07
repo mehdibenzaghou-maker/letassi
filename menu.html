@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#141210">
+<title>Menu &mdash; Le Tassi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li class="nav-dd">
+      <a href="#">Carte <span class="caret">&#9662;</span></a>
+      <ul class="dd-menu">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="poissons.html">Poissons</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <a href="menu.html">Menu</a>
+  <div class="mob-sec-label">&mdash; Carte &mdash;</div>
+  <a href="entrees.html">Entr&eacute;es</a><a href="pasta.html">Pasta &amp; Risotto</a>
+  <a href="viandes.html">Viandes</a><a href="poissons.html">Poissons</a>
+  <a href="pizza.html">Pizza &amp; Calzone</a><a href="desserts.html">Desserts</a>
+  <a href="boissons.html">Boissons</a>
+  <a href="contact.html">Contact</a>
+</div>
+<section class="dishes-wrap" style="padding-top:100px;padding-bottom:20px">
+  <div class="sec-header">
+    <p class="sec-eyebrow">Notre Carte</p>
+    <h2 class="sec-title">Menu Complet</h2>
+    <div class="sec-line"></div>
+  </div>
+</section>
+<div class="section-bar">
+  <div class="section-bar-inner">
+    <a href="#sec-entrees" class="sec-btn" data-section="sec-entrees">Entr&eacute;es</a>
+    <a href="#sec-pasta" class="sec-btn" data-section="sec-pasta">Pasta &amp; Risotto</a>
+    <a href="#sec-vb" class="sec-btn" data-section="sec-vb">Viandes Blanches</a>
+    <a href="#sec-vr" class="sec-btn" data-section="sec-vr">Viandes Rouges</a>
+    <a href="#sec-poissons" class="sec-btn" data-section="sec-poissons">Poissons</a>
+    <a href="#sec-pizza" class="sec-btn" data-section="sec-pizza">Pizza</a>
+    <a href="#sec-calzone" class="sec-btn" data-section="sec-calzone">Calzone</a>
+    <a href="#sec-desserts" class="sec-btn" data-section="sec-desserts">Desserts</a>
+    <a href="#sec-boissons" class="sec-btn" data-section="sec-boissons">Boissons</a>
+    <a href="#sec-milkshakes" class="sec-btn" data-section="sec-milkshakes">Milkshakes</a>
+  </div>
+</div>
+<section id="sec-entrees" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-leaf" style="margin-right:10px;color:var(--brown2)"></i>Entr&eacute;es</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Houmous Pesto &amp; L&eacute;gumes</div>
+      <div class="dish-desc">Pur&eacute;e de pois chiches au pesto et l&eacute;gumes croquants</div>
+      <div class="dish-price">900 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/salade%20ce%CC%81sar.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Salade C&eacute;sar"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Salade C&eacute;sar</div>
+      <div class="dish-desc">Laitue, parmesan, cro&ucirc;tons dor&eacute;s, sauce C&eacute;sar</div>
+      <div class="dish-price">1100 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/gratin.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Gratin de Fruits de Mer"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Gratin de Fruits de Mer</div>
+      <div class="dish-desc">M&eacute;lange de fruits de mer en cro&ucirc;te napolitaine</div>
+      <div class="dish-price">1200 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/salade%20grecque.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Salade Grecque"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Salade Grecque</div>
+      <div class="dish-desc">Crudit&eacute;s et Feta</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/burrata.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Burrata"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Burrata</div>
+      <div class="dish-desc">Burrata, tomates cerises et pesto</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Ceviche de Saumon</div>
+      <div class="dish-desc">Saumon, citron vert et herbes fra&icirc;ches</div>
+      <div class="dish-price">1600 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/salade%20meditiranienne.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Salade M&eacute;diterran&eacute;enne"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Salade M&eacute;diterran&eacute;enne</div>
+      <div class="dish-desc">Crudit&eacute;s et fruits de mer</div>
+      <div class="dish-price">1600 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-pasta" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-bowl-food" style="margin-right:10px;color:var(--brown2)"></i>Pasta &amp; Risotto</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/carbonara.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Carbonara d'Agnello"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Carbonara d'Agnello</div>
+      <div class="dish-desc">Bavette d'agneau, jaune d'&oelig;uf et parmesan</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Moules Broccolis</div>
+      <div class="dish-desc">Moules et cr&egrave;me de broccolis</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/lasagne.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Lasagna Bolognese"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Lasagna Bolognese</div>
+      <div class="dish-desc">Lasagnes &agrave; la bolognaise traditionnelle</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/ragout%20de%20boeuf.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Ragout de B&oelig;uf"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Ragout de B&oelig;uf</div>
+      <div class="dish-desc">B&oelig;uf effiloch&eacute; et l&eacute;gumes mijot&eacute;s</div>
+      <div class="dish-price">1600 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Ravioli d'Agnello e Feta</div>
+      <div class="dish-desc">Farce d'agneau et de feta</div>
+      <div class="dish-price" style="color:var(--gray);font-size:.82rem;font-style:italic">Prix &agrave; renseigner</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Pesto E Burrata</div>
+      <div class="dish-desc">Sauce pesto, burrata</div>
+      <div class="dish-price">1800 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pasta%20fruits%20de%20mer.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Frutti di Mare"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Frutti di Mare</div>
+      <div class="dish-desc">Sauce puttanesca et fruits de mer</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/risotto%20poulet.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Risotto Pollo e Funghi"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Risotto Pollo e Funghi</div>
+      <div class="dish-desc">Risotto de poulet aux champignons</div>
+      <div class="dish-price">1700 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/risotto%20crevettes.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Risotto Gamberi e Zucchine"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Risotto Gamberi e Zucchine</div>
+      <div class="dish-desc">Risotto de crevettes, cr&egrave;me de courgettes</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-vb" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-drumstick-bite" style="margin-right:10px;color:var(--brown2)"></i>Viandes Blanches</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pollo%20ts.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Parmigiana Di Pollo"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Parmigiana Di Pollo</div>
+      <div class="dish-desc">Escalope pan&eacute;e, sauce tomate, mozzarella, orzo</div>
+      <div class="dish-price">1700 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/brochettes%20ts.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Tavuk Kebab"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Tavuk Kebab</div>
+      <div class="dish-desc">Brochette de poulet, riz pilaf, l&eacute;gumes grill&eacute;s</div>
+      <div class="dish-price">1800 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Koropoulo Lemonato</div>
+      <div class="dish-desc">Cuisse de poulet marin&eacute;e &agrave; la grecque, salade betterave feta</div>
+      <div class="dish-price">1900 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Ballotine de Poulet</div>
+      <div class="dish-desc">Blanc de poulet, farce fine, l&eacute;gumes de saison</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/poulet%20a%20la%20creme.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Poulet Fermier"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Poulet Fermier</div>
+      <div class="dish-desc">Supr&ecirc;me de poulet, sauce champignons, risotto citronn&eacute;</div>
+      <div class="dish-price">2100 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-vr" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-fire" style="margin-right:10px;color:var(--brown2)"></i>Viandes Rouges</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Entrec&ocirc;te Cordon Bleu</div>
+      <div class="dish-desc">Entrec&ocirc;te fa&ccedil;on cordon bleu au beurre, accompagnement au choix</div>
+      <div class="dish-price">3400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">C&ocirc;telettes &agrave; la Grecque</div>
+      <div class="dish-desc">Agneau marin&eacute; aux saveurs grecques, toast tzatziki, poivrons</div>
+      <div class="dish-price">3600 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/filet%20de%20boeuf.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Filet de B&oelig;uf"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Filet de B&oelig;uf</div>
+      <div class="dish-desc">Filet grill&eacute;, beurre la&icirc;tue d'h&ocirc;tel, accompagnement au choix</div>
+      <div class="dish-price">3500 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-poissons" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-fish" style="margin-right:10px;color:var(--brown2)"></i>Poissons</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/paela.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Paella Marisco"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Paella Marisco</div>
+      <div class="dish-desc">Assortiment de fruits de mer, notes de paprika fum&eacute;</div>
+      <div class="dish-price">3200 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pave%CC%81%20de%20saumon%20ts.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Pav&eacute; de Saumon"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Pav&eacute; de Saumon</div>
+      <div class="dish-desc">Saumon, beurre citronn&eacute;, risotto de crevettes</div>
+      <div class="dish-price">3600 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-pizza" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-pizza-slice" style="margin-right:10px;color:var(--brown2)"></i>Pizza</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pizza%20marguerite.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Margherita"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Margherita</div>
+      <div class="dish-desc">Sauce tomate, mozzarella, basilic frais</div>
+      <div class="dish-price">700 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pizza%20vegetarienne.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Ortolana"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Ortolana</div>
+      <div class="dish-desc">Sauce tomate, l&eacute;gumes, champignons, mozzarella</div>
+      <div class="dish-price">900 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pizza%204%20fromages.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Quattro Formaggi"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Quattro Formaggi</div>
+      <div class="dish-desc">Sauce tomate, camembert, cheddar, gruy&egrave;re, mozzarella</div>
+      <div class="dish-price">1200 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pizza%20regine.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Regina"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Regina</div>
+      <div class="dish-desc">Sauce blanche, poulet fum&eacute;, champignons, mozzarella</div>
+      <div class="dish-price">1300 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Pollo</div>
+      <div class="dish-desc">Sauce tomate, poulet, mozzarella</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d" data-glb="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/pizza%20chevre%20miel.glb">
+      <model-viewer camera-orbit="0deg 68deg auto" min-camera-orbit="auto 30deg auto" max-camera-orbit="auto 75deg auto" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" interaction-prompt="none" shadow-intensity="0.3" style="width:100%;height:100%;opacity:0" alt="Capra e Miele"><button slot="ar-button" style="position:absolute;bottom:12px;right:12px;padding:8px 14px;border:1px solid rgba(232,220,200,.15);border-radius:10px;background:rgba(20,18,16,.6);color:var(--beige);font-size:.68rem;letter-spacing:1px;cursor:pointer;display:flex;align-items:center;gap:6px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)"><i class="fas fa-cube" style="color:var(--brown2)"></i> AR</button></model-viewer>
+      <div class="load-3d" onclick="loadDishViewer(this)"><i class="fas fa-cube"></i> Voir en 3D</div>
+    </div>
+    <div class="dish-info">
+      <div class="dish-name">Capra e Miele</div>
+      <div class="dish-desc">Sauce blanche, ch&egrave;vre, miel, mozzarella</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Messicana</div>
+      <div class="dish-desc">Sauce tomate, viande hach&eacute;e, poivrons, oignons, mozzarella</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Orientale</div>
+      <div class="dish-desc">Sauce tomate, merguez, oignons, camembert, mozzarella</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Pesto Burrata</div>
+      <div class="dish-desc">Sauce blanche, pesto, burrata</div>
+      <div class="dish-price">1800 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Frutti di Mare</div>
+      <div class="dish-desc">Sauce tomate, fruits de mer, mozzarella</div>
+      <div class="dish-price">2000 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Salmone</div>
+      <div class="dish-desc">Sauce blanche, saumon fum&eacute;, stracciatella, mozzarella</div>
+      <div class="dish-price">2200 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-calzone" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-pizza-slice" style="margin-right:10px;color:var(--brown2)"></i>Calzone</h2></div><div class="dishes-grid"><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Calzone Pollo</div>
+      <div class="dish-desc">Sauce fromag&egrave;re, poulet, mozzarella</div>
+      <div class="dish-price">1400 DA</div>
+    </div>
+  </div><div class="dish-card reveal">
+    <div class="dish-3d-empty"><span class="empty-icon"><i class="fas fa-cube"></i> 3D bient&ocirc;t</span></div>
+    <div class="dish-info">
+      <div class="dish-name">Calzone Carne</div>
+      <div class="dish-desc">Sauce tomate, viande hach&eacute;e, mozzarella</div>
+      <div class="dish-price">1500 DA</div>
+    </div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-desserts" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-cookie-bite" style="margin-right:10px;color:var(--brown2)"></i>Desserts</h2></div><div class="simple-grid"><div class="simple-card reveal">
+    <div><div class="simple-name">Cookie Choco Noisette</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cookie Bueno</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Brownie aux Noix</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Brookie</div></div>
+    <div class="simple-price">450 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Saint S&eacute;bastien</div></div>
+    <div class="simple-price">650 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cheesecake Bueno</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cheesecake Pistache</div></div>
+    <div class="simple-price">600 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cr&egrave;me Br&ucirc;l&eacute;e</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Fondant au Chocolat</div></div>
+    <div class="simple-price">600 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Tiramisu</div><div class="simple-sub">Classique / Pistache / Fruits rouges</div></div>
+    <div class="simple-price" style="color:var(--gray);font-size:.78rem;font-style:italic">&Agrave; renseigner</div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-boissons" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-mug-hot" style="margin-right:10px;color:var(--brown2)"></i>Boissons Chaudes</h2></div><div class="simple-grid"><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Espresso</div></div>
+    <div class="simple-price">250 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Capsule</div></div>
+    <div class="simple-price">300 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Machiatto</div></div>
+    <div class="simple-price">300 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">350 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; aux Trois Saveurs</div><div class="simple-sub">Vanille, Chocolat, Caramel</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Affogato</div><div class="simple-sub">Caf&eacute; Espresso, Glace Vanille</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Caf&eacute; Latte</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cappuccino Classique</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Cappuccino Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">450 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Latte Machiatto Classique</div></div>
+    <div class="simple-price">450 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Latte Machiatto Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Chocolat au Lait</div></div>
+    <div class="simple-price">400 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Mochaccino</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Th&eacute; Infusion</div></div>
+    <div class="simple-price">250 DA</div>
+  </div></div></section>
+<div class="brown-line"></div>
+<section id="sec-milkshakes" class="dishes-wrap" style="padding-top:40px;padding-bottom:40px"><div class="sec-header"><h2 class="sec-title" style="font-size:1.6rem"><i class="fas fa-blender" style="margin-right:10px;color:var(--brown2)"></i>Milkshakes &amp; Frappuccinos</h2></div><div class="simple-grid"><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Chocolat</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Banane</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Noisette</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Caramel</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Vanille</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Milkshake Fraise</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Frappuccino Classique</div></div>
+    <div class="simple-price">500 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Frappuccino Aromatis&eacute;</div><div class="simple-sub">Vanille / Chocolat / Caramel / Noisette</div></div>
+    <div class="simple-price">550 DA</div>
+  </div><div class="simple-card reveal">
+    <div><div class="simple-name">Ice Mocca</div></div>
+    <div class="simple-price">600 DA</div>
+  </div></div></section>
+<div class="brown-line"></div>
+<footer>
+  <div class="ft-grid">
+    <div>
+      <div class="ft-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></div>
+      <div class="ft-tagline">Restaurant &amp; Coffee</div>
+      <p class="ft-sub">Bab Ezzouar, Alger</p>
+      <div class="ft-soc">
+        <a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="tel:0699012400"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-hd">Menu</div>
+      <ul class="ft-links">
+        <li><a href="entrees.html">Entr&eacute;es</a></li>
+        <li><a href="pasta.html">Pasta &amp; Risotto</a></li>
+        <li><a href="viandes.html">Viandes</a></li>
+        <li><a href="pizza.html">Pizza &amp; Calzone</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="boissons.html">Boissons</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-hd">Contact</div>
+      <ul class="ft-links">
+        <li><i class="fas fa-phone" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="tel:0699012400">06 99 01 24 00</a></li>
+        <li><i class="fas fa-location-dot" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i>Bab Ezzouar 16042</li>
+        <li><i class="fab fa-instagram" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank">@letassi</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">&copy; 2025 <span>Le Tassi</span> &mdash; Restaurant &amp; Coffee</p>
+    <p class="ft-copy">R&eacute;alis&eacute; avec <span>&hearts;</span></p>
+  </div>
+</footer>
+<script src="script.js"></script></body></html>
