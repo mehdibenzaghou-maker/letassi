@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#141210">
+<title>Menu — Le Tassi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li class="nav-dd">
+      <a href="menu.html">Carte <span class="caret">&#9662;</span></a>
+      <ul class="dd-menu"><li><a href="entrees.html">Entrées</a></li><li><a href="pasta.html">Pasta</a></li><li><a href="risottos.html">Risottos</a></li><li><a href="viandes-blanches.html">Viandes Blanches</a></li><li><a href="viandes-rouges.html">Viandes Rouges</a></li><li><a href="poissons.html">Poissons</a></li><li><a href="pizza.html">Pizza</a></li><li><a href="calzone.html">Calzone</a></li><li><a href="desserts.html">Desserts</a></li><li><a href="boissons.html">Boissons Chaudes</a></li><li><a href="milkshakes.html">Milkshakes</a></li></ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <a href="menu.html">Menu</a>
+  <div class="mob-sec-label">— Carte —</div>
+  <a href="entrees.html">Entrées</a><a href="pasta.html">Pasta</a><a href="risottos.html">Risottos</a><a href="viandes-blanches.html">Viandes Blanches</a><a href="viandes-rouges.html">Viandes Rouges</a><a href="poissons.html">Poissons</a><a href="pizza.html">Pizza</a><a href="calzone.html">Calzone</a><a href="desserts.html">Desserts</a><a href="boissons.html">Boissons Chaudes</a><a href="milkshakes.html">Milkshakes</a>
+  <a href="contact.html">Contact</a>
+</div>
+<section class="hero" style="min-height:50vh">
+  <div class="hero-bg"></div>
+  <div class="hero-media"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi1.jpg" alt="Le Tassi"></div>
+  <div class="hero-overlay"></div>
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge">Notre Carte</div>
+    <h1 class="hero-name" style="font-size:clamp(2.5rem,7vw,4.5rem)">Menu</h1>
+    <div class="sec-line" style="margin-top:16px"></div>
+  </div>
+</section>
+<div class="brown-line"></div>
+<section class="dishes-wrap" style="padding-top:60px">
+  <div class="menu-sections-grid" style="max-width:900px"><a href="entrees.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-leaf"></i></div><div class="ms-name">Entrées</div><div class="ms-desc">6 entrées</div></a><a href="pasta.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-bowl-food"></i></div><div class="ms-name">Pasta</div><div class="ms-desc">7 plats</div></a><a href="risottos.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-bowl-rice"></i></div><div class="ms-name">Risottos</div><div class="ms-desc">2 risottos</div></a><a href="viandes-blanches.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-drumstick-bite"></i></div><div class="ms-name">Viandes Blanches</div><div class="ms-desc">3 plats</div></a><a href="viandes-rouges.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-fire"></i></div><div class="ms-name">Viandes Rouges</div><div class="ms-desc">3 plats</div></a><a href="poissons.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-fish"></i></div><div class="ms-name">Poissons</div><div class="ms-desc">2 plats</div></a><a href="pizza.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-pizza-slice"></i></div><div class="ms-name">Pizza</div><div class="ms-desc">10 pizzas</div></a><a href="calzone.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-pizza-slice"></i></div><div class="ms-name">Calzone</div><div class="ms-desc">2 calzones</div></a><a href="desserts.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-cookie-bite"></i></div><div class="ms-name">Desserts</div><div class="ms-desc">7 douceurs</div></a><a href="boissons.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-mug-hot"></i></div><div class="ms-name">Boissons Chaudes</div><div class="ms-desc">14 boissons</div></a><a href="milkshakes.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-blender"></i></div><div class="ms-name">Milkshakes</div><div class="ms-desc">9 boissons</div></a></div>
+</section>
+<div class="cart-float" onclick="toggleCart()"><i class="fas fa-shopping-bag"></i><div class="cart-count"></div></div>
+<div class="cart-overlay" onclick="toggleCart()"></div>
+<div class="cart-panel">
+  <div class="cart-head"><h3><i class="fas fa-shopping-bag" style="color:var(--brown2);margin-right:8px"></i>Panier</h3><button class="cart-close" onclick="toggleCart()">&times;</button></div>
+  <div class="cart-items"></div>
+  <div class="cart-foot"><div class="cart-total"><span>Total</span><span class="ct-val">0 DA</span></div><button class="order-btn" onclick="openOrderForm()"><i class="fab fa-whatsapp"></i> Commander via WhatsApp</button></div>
+</div>
+<div class="order-modal">
+  <div class="om-bg" onclick="closeOrderForm()"></div>
+  <div class="om-form">
+    <button class="om-close" onclick="closeOrderForm()">&times;</button>
+    <h3>Commander</h3>
+    <p class="om-sub">Remplissez vos informations pour finaliser la commande</p>
+    <div class="f-group"><div class="f-label">Type de commande</div>
+      <div class="f-radios">
+        <div class="f-radio"><input type="radio" name="otype" id="type-takeout" value="takeout"><label for="type-takeout"><i class="fas fa-bag-shopping"></i><span>Emporter</span></label></div>
+        <div class="f-radio"><input type="radio" name="otype" id="type-delivery" value="delivery"><label for="type-delivery"><i class="fas fa-motorcycle"></i><span>Livraison</span></label></div>
+      </div></div>
+    <div class="f-group"><div class="f-label">Nom</div><input class="f-input" id="o-name" placeholder="Votre nom"></div>
+    <div class="f-group"><div class="f-label">Téléphone</div><input class="f-input" id="o-phone" type="tel" placeholder="0X XX XX XX XX"></div>
+    <div class="delivery-fields"><div class="f-group"><div class="f-label">Adresse de livraison</div><input class="f-input" id="o-addr" placeholder="Votre adresse complète"></div></div>
+    <button class="om-submit" onclick="submitOrder()"><i class="fab fa-whatsapp" style="font-size:1.05rem"></i> Envoyer la commande</button>
+  </div>
+</div>
+<footer>
+  <div class="ft-grid">
+    <div>
+      <div class="ft-logo"><img src="https://pub-b75110a7cd344cd9b74be108f96dd058.r2.dev/letassi%20profile.jpg" alt="Le Tassi"></div>
+      <div class="ft-tagline">Restaurant &amp; Coffee</div>
+      <p class="ft-sub">Bab Ezzouar, Alger</p>
+      <div class="ft-soc"><a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank"><i class="fab fa-instagram"></i></a><a href="tel:0699012400"><i class="fas fa-phone"></i></a></div>
+    </div>
+    <div><div class="ft-hd">Menu</div><ul class="ft-links"><li><a href="entrees.html">Entrées</a></li><li><a href="pasta.html">Pasta</a></li><li><a href="risottos.html">Risottos</a></li><li><a href="viandes-blanches.html">Viandes Blanches</a></li><li><a href="viandes-rouges.html">Viandes Rouges</a></li><li><a href="poissons.html">Poissons</a></li><li><a href="menu.html">Tout le menu →</a></li></ul></div>
+    <div><div class="ft-hd">Contact</div><ul class="ft-links">
+      <li><i class="fas fa-phone" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="tel:0699012400">06 99 01 24 00</a></li>
+      <li><i class="fas fa-location-dot" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i>Bab Ezzouar 16042</li>
+      <li><i class="fab fa-instagram" style="color:var(--brown2);margin-right:6px;font-size:.7rem"></i><a href="https://www.instagram.com/letassi_restaurantcoffee/" target="_blank">@letassi</a></li>
+    </ul></div>
+  </div>
+  <div class="ft-bottom"><p class="ft-copy">© 2025 <span>Le Tassi</span> — Restaurant &amp; Coffee</p><p class="ft-copy">Réalisé avec <span>♥</span></p></div>
+</footer>
+<script src="script.js"></script></body></html>
